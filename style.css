@@ -28,3 +28,13 @@
 .example em {
 	font-weight: bold;
 }
+
+@media only screen and (max-width: 600px) {
+	#toc {
+		display: none;
+	}
+
+	.navbar {
+		display: none;
+	}
+}
