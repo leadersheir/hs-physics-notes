@@ -214,7 +214,153 @@
         \therefore G = \frac{F}{A\theta}
       \]
 
-      [Shear/rigidity modulus is denoted by an \(n\) in Dr. Tapan's text.]
+      [Shear/rigidity modulus is denoted by an \(n\) in Dr. Tapan's text.] <br><br>
+
+      Within elastic limit, the ratio of the lateral strain to the longitudinal strain is constant, and is termed as the <strong>poisson ratio</strong>.
+      \[
+        \sigma = \frac{\text{lateral strain}}{longitudinal strain}
+      \]
+
+      For a wire of diameter \(d_0\) and and length \(l_0\)
+      \[
+        \text{lateral strain} = \frac{d}{d_0}
+      \]
+      \[
+        \text{longitudinal strain} = \frac{l}{l_0}
+      \]
+      
+      Therefore the poisson's ratio is given by
+      \begin{align}
+        \sigma &= \frac{d/d_0}{l/l_0} \\
+               &= \frac{dl_0}{d_0l} \\
+      \end{align}
+
+      An equivalent but slightly different expression for the poisson's ratio is
+      \[
+        \sigma = -\frac{rl_0}{lr_0}
+      \]
+      where \(r\) is the change in the radius of the wire due to deformation, and \(r_0\) is the original radius of the wire. The negative sign signifies that
+      \begin{align}
+        l \gt 0 &\implies r \lt 0, \quad \text{and} \\
+        l \lt 0 &\implies r \gt 0
+      \end{align}
+
+      The poisson's ratio, being a ratio of two strains, is a dimensionless quantity. <br><br>
+
+      In theory, sigma (poisson's ratio) remains within the range \(-1 \leq \sigma \leq 0.5\); but the negative value of \(\sigma\) is interpreted as the expansion of the diameter due to the expansion of the length (or vice versa), which is not observed in nature. <br><br>
+
+      Generally, for metals
+      \[
+        0 \leq \sigma \leq 0.5
+      \]
+
+      The work done to deform a body longitudinally is given by
+      \[
+        W = \int_0^l \frac{\gamma A}L \, dl = \frac{1}2 \frac{\gamma A l^2}L
+      \]
+      
+      where \(\gamma\) is the young's modulus, \(A\) is the cross-sectional area, and \(L\) is the initial length of the material. <br><br>
+
+      <h4>Fluids</h4>
+
+      The type of fluid flow in which all particles follow the path of the adjacent particles moving forward with roughly the same velocity is called <strong>streamline flow</strong>. <br>
+      In a streamline flow, the velocity of the flow is lower than the critical velocity of the fluid. <br><br>
+
+      The type of fluid flow where the particles are flowing at a greater velocity than the critical velocity of the fluid is called <strong>turbulent flow</strong>. <br><br>
+
+      <strong>Osborne Reynolds</strong> proved that the critical velocity of a fluid depends on the <em>coefficient of viscocity</em> (\(eta\)) of the fluid, the density (\(\rho\)) of the fluid, and the radius (\(r\)) of the tube which the fluid is flowing through.
+      \[
+        v_c \propto \frac{\eta}{\rho r}
+      \]
+
+      The proportionality constant is the <em>Reynold's number</em> \(R_e\).
+      \[
+        v_c = R_e \frac{\eta}{\rho r}
+      \]
+
+      The type of fluid flow relates to the Reynold's number in the following ways
+      \begin{align}
+        R_e &\lt 2000  \implies \text{streamline flow} \\
+        R_e &\leq 3000 \implies \text{transitioning from streamline to turbulent flow} \\
+        R_e &> 3000 \implies \text{turbulent flow}
+      \end{align}
+
+      The property of a fluid to resist the relative motion of the different layers of it is termed as <strong>viscocity</strong> or <strong>internal friction</strong>. <br><br>
+
+      Taking two layers of a fluid \(dy\) away from each other with velocities \(v\) and \(dv\), the <strong>velocity gradient</strong> is
+      \[
+        \frac{dv}{dy}
+      \]
+
+      Newton's law of viscocity states - if there is relative velocity between two layers of a fluid at constant temperature, then the tangential viscous force is directly proportional to the surface area and the velocity gradient of the layers.
+      \begin{align}
+        F \propto A, \quad \frac{dv}{dy} \text{ constant} \\
+        F \propto \frac{dv}{dy}, \quad A \text{ constant} \\
+        F \propto A \frac{dv}{dy}, \quad \text{ none are constant}
+      \end{align}
+
+      And the proportionality constant is the coefficient of viscocity.
+      \[
+        F = \eta A \frac{dv}{dy}
+      \]
+      
+      The dimensions of the viscous force is [ML\({}^{-1}\)T\({}^{-1}\)], and its units are Nsm\({}^{-2}\) or Pa\(\cdot\)s. <br><br>
+
+      Another unit for the viscous force is <em>poise</em>.
+      \[
+        1 \text{ Nsm}^{-2} = 10 \text{ poise}
+      \]
+
+      The relation between the viscocity of a liquid with temperature is given by
+      \[
+        \log \eta = A + \frac{B}T
+      \]
+      
+      where \(A\) and \(B\) are constants. <br><br>
+
+      The viscocity of gases is directly proportional to the square root of the temperature.
+      \[
+        \eta \propto \sqrt{T}
+      \]
+
+      The relation between temperature and viscocity in liquids
+      \[
+        T \uparrow \implies V \downarrow, \quad T \downarrow \implies V \uparrow
+      \]
+
+      And in gases
+      \[
+        T \uparrow \implies V \uparrow, \quad T \downarrow \implies V \downarrow
+      \]
+
+      Pressure increases the viscocity in liquids, but almost no change in viscocity is observed in gases due to a change in pressure. However, some exceptions do occur at low pressures.
+
+      <h4>Stokes' Law and Drag Forces in Liquids</h4>
+
+      <strong>Stokes' Law</strong> states: the resistive force of a fluid on a sphere traversing through it is directly proportional to the radius of the sphere, the velocity of the sphere, and the viscocity of the fluid.
+      \[
+        F = 6 \pi \eta r v
+      \]
+      where \(F\) is the resistive force, \(\eta\) is the coefficient of viscocity of the fluid, \(r\) is the radius of the sphere, and \(v\) is the velocity of the sphere. <br><br>
+
+      The maximum constant velocity at which a body can travel in a fluid is called the <strong>terminal velocity</strong>. It's obtained when the applied force equals te resistive viscous force. <br><br>
+
+      The terminal velocity of a solid sphere falling in a fluid is given by
+      \[
+        v_{\text{terminal}} = \frac{2r^2(\rho_s - \rho_f)g}{9\eta}
+      \]
+      where \(\rho_s\) is the density of the sphere, \(\rho_f\) is the density of the fluid, \(g\) is the acceleration due to gravity, and \(\eta\) is the coefficient of viscocity. <br><br>
+
+      For air bubbles coming up in a fluid
+      \[
+        v_{\text{terminal}} = \frac{2r^2(\rho_f - \rho_s)g}{9\eta}
+      \]
+      but since \(\rho_s \lt\lt \rho_f\),
+      \[
+        v_{\text{terminal}} = \frac{2r^2\rho_f g}{9\eta}
+      \]
+
+
 
 
 
