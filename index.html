@@ -37,6 +37,7 @@
         <a href="#ch8"><h5>Chapter 8</h5></a>
         <a href="#ch9"><h5>Chapter 9</h5></a>
         <a href="#ch10"><h5>Chapter 10</h5></a>
+        <a href="#"><h5>Vol II</h5></a>
       </div>
 
 
@@ -119,6 +120,101 @@
       where \(F\) is the magnitude of the applied or restoring force and \(A\) is the surface area perpendicular to the force. <br>
       The dimensions of stress is [ML\({}^{-1}\)T\({}^{-2}\)] and its units are Nm\({}^{-2}\) or Pa (Pascals). <br><br>
 
+      The molecules in a crystal generally remain at a minimum potential energy state - the equilibrium, where the net intermolecular force is 0. <br><br>
+
+      <strong>Longitudinal/tensile strain</strong> is the change in the length of a body per unit length.
+      \[
+        \text{tensile strain} = \frac{l}{l_{0}}
+      \]
+
+      The perpendicular force that arises per unit surface area to resist the tensile strain, equal to the force applied to cause the tensile strain, is called the <strong>tensile stress</strong>.
+      \[
+        \text{tensile stress} = \frac{F}{A}
+      \]
+
+      For a wire of radius \(r\) and cross-sectional area \(A = \pi r^2\)
+      \[
+        \text{tensile stress} = \frac{mg}{\pi r^2}
+      \]
+      where \(m\) is the mass connected at the bottom of the wire and \(g\) is the acceleration due to gravity.
+
+      Following the same reasoning as the tensile stress, the change in the volume per unit volume of a body is
+      \[
+        \text{volumetric/bulk strain} = \frac{V}{V_{0}}
+      \]
+
+      Consequently,
+      \[
+        \text{volumetric/bulk stress} = \frac{F}{A}
+      \]
+
+      <strong>Shearing strain</strong> is the relative displacement of two parallel planes situated at a unit distance.
+
+      \[
+        \text{shearing strain} = \frac{\Delta x}{x_{0}}, \quad \Delta x \equiv x - x_0
+      \]
+
+      And the strain angle
+      \[
+        \theta = \arctan \left( \frac{\Delta x}{x_0} \right)
+      \]
+      recall that the body is of unit dimensions (length and width), there \(x_0\) is also the distance between the parallel planes.
+
+      <strong>Hook's Law</strong> states: within elastic limit, the stress of a body is directly proportional to the strain.
+      \[
+        \text{stress} \propto \text{strain} \iff \frac{\text{stress}}{\text{strain}} = \text{constant}
+      \]
+
+      Continuously applying and removing stress to a body causes it <em><strong>elastic fatigue</strong></em>; as a result of which its elasticity decreases and it takes logner to return to its original state once the deforming force is removed. An <em>elastically fatigued</em> body can snap at a loewr <em>breaking load</em> even within its elastic limit.
+
+      <h4>Elastic Moduli</h4>
+
+      <em>def</em> <strong>Elastic moduli</strong> are the ratios of stress and strain of a material, which remains constant within the elastic limit. <br><br>
+
+      <strong>Young's modulus</strong> or longitudinal modulus is given by
+      \begin{align}
+        \gamma &= \frac{\text{tensile stress}}{\text{tensile strain}} \\
+               &= \frac{ F/A }{ l/l_0 } \\
+               &= \frac{Fl_0}{Al}
+      \end{align}
+
+      where \(F\) is the magnitude of the applied force, \(A\) is the cross-sectional area perpendicular to the force, \(l\) is the stretched or compressed length of the material, and \(l_0\) is the original length of the material. <br><br>
+
+      For a mass \(m\) attached at the bottom end of a wire of radius \(r\) and cross-sectional area \(A = \pi r^2\)
+      \[
+        \gamma = \frac{mgl_0}{\pi r^2 l}
+      \]
+
+      <strong>Bulk modulus</strong> is given by
+      \begin{align}
+        \beta &= \frac{\text{bulk stress}}{\text{bulk strain}} \\
+              &= \frac{ F/A }{ V/V_0 } \\
+              &= \frac{FV_0}{AV} \\
+              &= \frac{PV_0}{V}
+      \end{align}
+
+      where \(V_0\) is the original volume of the material, \(V\) is the volume of the material after deformation, and \(P\) is the pressure applied to the material, which is the bulk stress. <br><br>
+
+      <strong>Compressibility</strong> is the ratio of the <em>bulk strain</em> to the <em>bulk stress</em> on a material within the elastic limit. It's the reciprocal of the bulk modulus.
+      \[
+        \text{compressibility} = \frac{\text{bulk strain}}{\text{bulk stress}} = \frac{1}\beta
+      \]
+
+      The <strong>rigidity modulus</strong> or <strong>shear modulus</strong> is given by
+      \begin{align}
+        G &= \frac{\text{shearing stress}}{\text{shearing strain}} \\
+          &= \frac{F/A}{x/x_0} \\
+          &= \frac{F/A}{\tan\theta}
+      \end{align}
+      
+      where \(\theta\) is the strain angle. <br>
+
+      For \(\theta \lt\lt 1\), \(\tan\theta \approx \theta\)
+      \[
+        \therefore G = \frac{F}{A\theta}
+      \]
+
+      [Shear/rigidity modulus is denoted by an \(n\) in Dr. Tapan's text.]
 
 
 
