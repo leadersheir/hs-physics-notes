@@ -269,7 +269,7 @@
 
         The type of fluid flow where the particles are flowing at a greater velocity than the critical velocity of the fluid is called <strong>turbulent flow</strong>. <br><br>
 
-        <strong>Osborne Reynolds</strong> proved that the critical velocity of a fluid depends on the <em>coefficient of viscocity</em> (\(eta\)) of the fluid, the density (\(\rho\)) of the fluid, and the radius (\(r\)) of the tube which the fluid is flowing through.
+        <strong>Osborne Reynolds</strong> proved that the critical velocity of a fluid depends on the <em>coefficient of viscocity</em> (\(\eta\)) of the fluid, the density (\(\rho\)) of the fluid, and the radius (\(r\)) of the tube which the fluid is flowing through.
         \[
           v_c \propto \frac{\eta}{\rho r}
         \]
@@ -450,10 +450,157 @@
           \implies h &\propto \frac{1}r
         \end{align}
 
-        That is, <em>at constant temperature, the height of the risen or fallen liquid in a capillary tube is proportional to the radius of the tube</em> - <strong>Jurin's Law</strong>.
+        That is, <em>at constant temperature, the height of the risen or fallen liquid in a capillary tube is inversely proportional to the radius of the tube</em> - <strong>Jurin's Law</strong>.
 
         <hr>
-        </div>
+      </div>
+
+      <div id="ch8">
+
+        <h2>Chapter 8 Periodic Motion</h2>
+
+        Periodicity is of two types:
+        <ul>
+          <li><em>Spatial</em> periodicity - repeating in space</li>
+          <li><em>Temporal</em> periodicity - repeating in time</li>
+        </ul>
+
+        <h4>Definitions Regarding Periodic Motion</h4>
+
+        <em>def</em> <strong>Periodic Motion</strong>. If the motion of a particle is such that it passes a certain point in its path from the same direction after a definite interval of time, the motion is called <em>periodic motion</em>. <br><br>
+
+        <em>def</em> <strong>Time period</strong>. The time interval after which a particle in periodic motion passes a certain point of its path from the same direction is called the <em>time period</em>. <br><br>
+
+        <em>def</em> <strong>Oscillatory/ Vibratory Motion</strong>. If the periodic motion of a particle is such that it moves in one direction for half the duration of the time period and in the opposite direction for the other half, it's called <em>vibratory</em> or <em>oscillatory</em> motion. <br><br>
+
+        <em>def</em> <strong>Simple Harmonic Motion (SHM)</strong>. If the acceleration of a body is directly proportional to its displacement with respect to a certain equilibrium point, and is always directed towards that point, then the motion is called <em>simple harmonic motion</em>. <br><br>
+
+        Since force is proportional to acceleration, it is also proportional to the displacement.
+        \begin{align}
+          F & \propto a \propto -x \\
+          \implies F & \propto -x = -kx
+        \end{align}
+        where \(k\) is called the <em>force constant</em>. <br><br>
+
+        The force in SHM is
+        <ul>
+          <li>Periodic</li>
+          <li>Oscillatory</li>
+          <li>Proportional to the magnitude of the displacement at any given instance</li>
+        </ul>
+
+        <em>def</em> <strong>Complete oscillation</strong>. In SHM, a complete back and forth movement of a body is called a <em>complete oscillation</em>. <br><br>
+
+        <em>def</em> <strong>Time period</strong>. The time taken to complete one complete oscillation is called the <em>time period</em>. <br><br>
+
+        <em>def</em> <strong>Frequency</strong>. The number of complete oscillations per second is called the <em>frequency</em>. <br><br>
+
+        <em>def</em> <strong>Amplitude</strong>. The maximum displacement of a body in SHM from the equilibrium is called the <em>amplitude</em>. <br><br>
+
+        <em>def</em> <strong>Phase</strong>. The phase of a particle in SHM is the state of its motion at a particular instant in time. It determines the displacement, velocity, acceleration, and so on, of the particle. <br><br>
+
+        <h4>The Differential Equation of SHM</h4>
+        \begin{align}
+          F = ma &= -kx \\
+          \implies m\ddot{x} &= -kx \\
+          \implies \ddot{x} &= -\frac{k}m x \\
+          \implies \ddot{x} &= -\omega^2x, \quad \omega \equiv \sqrt{\frac{k}m}          
+        \end{align}
+        this differential equation is called the <em>differential equation of periodic motion</em>. Here's how to solve it.
+        \begin{align}
+          \ddot{x} &= -\omega^2x \\
+          \implies \frac{dv}{dt} &= -\omega^2x \\
+          \implies \frac{dx}{dt}\frac{dv}{dx} &= -\omega^2x \\
+          \implies \int v\, dv &= -\omega^2x\, dx \\
+          \implies \frac{v^2}2 &= -\omega^2 \frac{x^2}2 + C \\
+        \end{align}
+        Now using the initial values \(v(0) = 0\) and \(x(0) = A\), we get
+        \begin{align}
+          C = \frac{\omega^2A^2}2
+        \end{align}
+        Thus we obtain the general solution
+        \begin{align}
+          \frac{v^2}2 &= -\omega^2\frac{x^2}2 + \frac{\omega^2A^2}2 \\
+          \implies v &= \omega\sqrt{A^2 - x^2} \\
+          \implies \frac{dx}{A\sqrt{1 - \frac{x^2}{A^2}}} &= \omega\, dt \\
+        \end{align}
+        Substituting \(x = A\sin\theta \implies dx = \cos\theta\, d\theta\)
+        \begin{align}
+          \frac{A\cos\theta}{A\sqrt{1 - \sin^2\theta}} d\theta &= \omega\, dt \\
+          \implies \int d\theta &= \int \omega \, dt \\
+          \implies \theta &= \omega t + \phi \\
+          \implies \arcsin\left(\frac{x}A\right) = \omega t = \phi \\
+          \implies x = A\sin(\omega t + \phi)
+        \end{align}
+
+        By instead substituting \(x = A\cos\theta\), we would've arrived at the following alternate solution
+        \[
+          x = A\cos(\omega t + \delta)
+        \]
+        This is left as an exercise for the reader. <br><br>
+
+        Observe in the obtained equation now that
+        \begin{align}
+          x &= A\sin[\omega\left(t + \frac{2\pi}\omega\right) + \phi] \\
+            &= A\sin(\omega t + 2\pi + \phi) \\
+            &= A\sin(\omega t + \phi) \\
+            &= x
+        \end{align}
+        meaning that the particle returns to its starting position after every \(\frac{2\pi}{\omega}\) seconds. Hence it's the time period
+        \[
+          T = \frac{2\pi}\omega
+        \]
+
+        Now recall from earlier
+        \[
+          \omega^2 = \frac{k}m
+        \]
+
+        Which then follows
+        \[
+          T = 2\pi\sqrt{\frac{m}k}
+        \]
+
+        And because we have that \(f = \frac{1}T\), we also have that
+        \[
+          f = \frac{1}{2\pi}\sqrt{\frac{k}m}
+        \]
+
+        We've been using \(\omega\) for a while but haven't mentioned what it is. It's the <strong>angular frequency</strong> of the periodic motion. It shouldn't be confused with <em>angular velocity</em> from rotational motion, albeit the two are very closely related.
+        \[
+          \omega = \frac{2\pi}{T} = 2\pi f = \sqrt{\frac{k}m}
+        \]
+
+        The \(A\) in the position function is the <em>amplitude</em>, while the quantity \((\omega t + \phi)\) is the <em>phase</em>. <br><br>
+
+        We can obtain an expression for the velocity by differentiating the position function
+        \[
+          v = \frac{dv}{dx} = \omega A\cos(\omega t + \phi)
+        \]
+
+        Alternatively, we also have that
+        \begin{align}
+          v &= \omega \sqrt{A^2 - x^2}
+        \end{align}
+
+        From the former expression for the velocity, we can infer that the expression for the <em>maximum velocity</em> is given by
+        \[
+          v_{\text{max}} = \omega A, \quad [\because \text{the maximum value for the cosine function is 1}]
+        \]
+
+        Differentiating once more, we find the expression for the acceleration
+        \begin{align}
+          a = \frac{dv}{dt} = -\omega^2 A\sin(\omega t + \phi)
+        \end{align}
+
+        And the expression that gives the <em>maximum acceleration</em> is therefore
+        \[
+          a_{\text{max}} = \omega^2 A
+        \]
+
+
+
+      </div>
 
 
       
