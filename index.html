@@ -598,6 +598,72 @@
           a_{\text{max}} = \omega^2 A
         \]
 
+        <h4>Energy in Simple Harmonic Motion</h4>
+
+        <h5>Potential Energy</h5>
+
+        The potential energy is given by
+        \[
+          U = \int_0^x F(x) \, dx
+        \]
+        
+        And in SHM
+        \[
+          F = -kx
+        \]
+
+        Therefore work is done by applying an equal and opposite force of \(F'=kx\) to it. Therefore the potential energy is given by
+        \begin{align}
+          U &= \int_0^x F'\, dx \\
+            &= \int_0^x kx\, dx \\
+            &= \frac{kx^2}2
+        \end{align}
+
+        Which can be rewritten as the following
+        \[
+          U = \frac{1}2kA^2\sin^2(\omega t + \phi)
+        \]
+
+        From which we can infer the <strong>maximum potential energy</strong> of a system in SHM to be
+        \[
+          U_{\text{max}} = \frac{kA^2}2
+        \]
+
+        which is also the total mechanical energy of the system.
+
+        <h5>Kinetic Energy</h5>
+
+        The kinetic energy of a system is given by
+        \[
+          K = \frac{1}2 mv^2
+        \]
+
+        And for SHM, we have that
+        \[
+          v = \omega A \cos(\omega t + \phi)
+        \]
+
+        Therefore the kinetic energy of a system in SHM is given by
+        \begin{align}
+          K &= \frac{1}2 m \omega^2 A^2 \cos^2(\omega t + \phi) \\
+            &= \frac{1}2 k A^2 \cos^2(\omega t + \phi), \quad \left[\because \omega^2 \equiv \frac{k}m\right]
+        \end{align}
+
+        Then the maximum kinetic energy is
+        \[
+          K_{\text{max}} = \frac{kA^2}2
+        \]
+
+        which, again, is the total mechanical energy of the system. <br><br>
+
+        And finally, we verify that our claim about the expressions for the maxima of the potential and the kinetic energies is true
+        \[
+          E_{\text{mech}} = U + K = \frac{1}2 kA^2 \sin(\omega t + \phi) + \frac{1}2 k A^2 \cos(\omega t + \phi) = \frac{1}2 k A^2
+        \]
+        and indeed we were not in the wrong to have been making that claim.
+
+
+
 
 
       </div>
