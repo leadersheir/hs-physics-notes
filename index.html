@@ -662,9 +662,126 @@
         \]
         and indeed we were not in the wrong to have been making that claim.
 
+        <h4>Applications of the Theory of Simple Harmonic Motion</h4>
 
+        <h5>Vertically Oscillating Spring</h5>
 
+        Let us take a vertical spring of neglegible mass with a body of mass \(m\) attached to the bottom end of it. As a result of the hanging mass, let the new equilibrium of it be at \(x_0\). Taking downwards as the positive direction, when the spring is at the equilibrium we have that
+        \begin{align}
+          \sum F_y &= 0 \\
+          \implies -kx_0 + mg &= 0 \\
+          \implies mg &= kx_0
+        \end{align}
 
+        Now when the spring is given a downward pull or an upward push by \(x\) units, the hanging mass gets an acceleration \(a\)
+        \begin{align}
+          -k(x+x_0) + mg &= ma \\
+          \implies -kx + kx_0 &= ma \quad [\,\, \because mg = kx_0\,\,] \\
+          \implies -kx &= ma \\
+          \implies a &= -\frac{k}m x \\
+          \implies a &= -\omega^2 x, \quad \omega \equiv \sqrt{\frac{k}m}
+        \end{align}
+
+        Thus having obtained the acceleration of the hanging mass on the spring, we also get the rest of the properties of SHM holding true for the system as well, given three conditions are fulfilled:
+        <ul>
+          <li>The spring must not be stretched beyond its elastic limit so as to invalidate the applicability of Hook's Law.</li>
+          <li>The amplitude of the oscillation must be smaller than the stretched length due to the handing mass: \(\mid x \mid \lt \mid x_0 \mid \).</li>
+          <li>The mass of the spring is neglegible compared to the mass of the object.</li>
+        </ul>
+
+        The <em>time period</em> for the spring is given by
+        \[
+          T = \frac{2\pi}{\omega} = 2\pi \sqrt{\frac{m}k} = 2\pi\sqrt{\frac{x_0}g} \impliedby mg = kx_0
+        \]
+        where \(m\) can be either the mass of the hanging mass alone or the comnbined mass of the spring and the hanging mass \(m \equiv m_{spring} + m_{object}\). <br><br>
+
+        The square of the time period of the oscillating mass is directly proportional to the mass
+        \begin{align}
+          T &= 2\pi\sqrt{\frac{m}k} \\
+          \implies T^2 &= 4\pi^2\frac{m}k \\
+          \implies T^2 &\propto m, \quad [\,\, \because \left(\frac{4\pi^2}k\right) \text{ is a constant.} \,\,]
+        \end{align}
+
+        <h5>Simple Pendulum</h5>
+
+        <em>def</em> <strong>Simple Pendulum</strong>. A system consisting of a point mass suspended by a massless, inextensible, but perfectly flexible thread which can oscillate in a vertical plane without friction is called a <em>simple pendulum</em>. <br><br>
+
+        <em>def</em> <strong>Bob</strong>. The body of mass which is suspended by the thread in a simple pendulum is called the <em>bob</em>. <br><br>
+
+        <em>def</em> <strong>Point of Suspension</strong>. The point from which the <em>bob</em> is suspended by the thread in a simple pendulum is called the <em>point of suspension</em>. <br><br>
+
+        <em>def</em> <strong>Effective Length</strong>. The distance from the point of suspension to the center of mass of the <em>bob</em> is called the <em>effective length</em> of a simple pendulum. For a thread of length \(l\) and a bob of radius \(r\), the effective length \(L\) is
+        \[
+          L = l + r
+        \]
+
+        The acceleration of a simple pendulum is given by
+        \[
+          a = -g\sin\theta
+        \]
+        
+        For \(\theta \lt\lt 1\), \(\sin\theta \approx \theta\). Then we have
+        \[
+          a = -g\theta = -\frac{g}L x = -\omega^2 x, \quad \omega \equiv \sqrt{\frac{g}L}
+        \]
+
+        Then the <em>time period</em> for the simple pendulum becomes
+        \[
+          T = \frac{2\pi}{\omega} = 2\pi \sqrt{\frac{L}g}
+        \]
+
+        <h5>Laws of the Simple Pendulum</h5>
+
+        <strong>1) Isochronism.</strong> For angular amplitude \(\theta \lt 4^{\circ}\) and constant effective length \(L\), each oscillation of a simple pendulum takes an eqaul amount of time at the same geographical location - the <em>time period</em> is independent of the <em>angular amplitude</em>. <br><br>
+
+        <strong>2) Law of Length.</strong> For angular amplitude \(\theta \lt 4^{\circ}\) the <em>time period</em> of a simple pendulum is directly proportional to the square root of its <em>effective length</em> at the same geographical location.
+        \[
+          T \propto \sqrt{L}
+        \]
+
+        <strong>3) Law of Accerlation.</strong> For angular amplitude \(\theta \lt 4^{\circ}\) and constant effective length \(L\), the <em>time period</em> of a simple pendulum is inversely proportional to the square root of the acceleration due to gravity at the same geographical location.
+        \[
+          T \propto \frac{1}{\sqrt{g}}
+        \]
+
+        <strong>4) Law of Mass.</strong> For angular amplitude \(\theta \lt 4^{\circ}\) and constant effective length \(L\), the time period is independent of the bob's mass, volume, or composition at the same geographical location.
+
+        <h5>Uses of the Simple Pendulum</h5>
+
+        <ol>
+          <li>
+            Determination of the <em>acceleration due to gravity</em>.
+            \[
+              g = 4\pi^2\frac{L}{T^2}
+            \]
+          </li>
+          <li>
+            Determination of the height of a geographical location.
+            \[
+              h = \left[\frac{T'}T - 1\right]R
+            \]
+            where \(T\) is the time period of the simple pendulum at the bottom of the mountain, \(T'\) is the time period of the same at the top of the mountain, and \(R\) is the radius of the earth.
+          </li>
+          <li>
+            Determination of time. If a clock runs \(n\) seconds fast/slow in one day, then its time period is given by
+            \[
+              T = \frac{2\times 86400}{86400 \pm n}
+            \]
+          </li>
+        </ol>
+        
+        The proofs of the above is left as an exercise for the reader. <br><br>
+
+        <em>def</em> <strong>Second Pendulum</strong>. A pendulum that performs half an oscillation per second is called a <em>second pendulum</em>. <br><br>
+
+        The length of a second pendulum is found thus
+        \begin{align}
+          T &= 2 = 2\pi\sqrt{\frac{L}g} \\
+          \implies L &= \frac{g}{\pi^2}
+        \end{align}
+        The observation to be made here is that <em>the length of the second pendulum is directly proportional to the acceleration due to gravity</em>.
+
+        <hr>
 
       </div>
 
