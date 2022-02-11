@@ -758,7 +758,7 @@
           <li>
             Determination of the height of a geographical location.
             \[
-              h = \left[\frac{T'}T - 1\right]R
+              h = \left[\frac{T'}T - 1\right]R = \left[\left(\frac{g}{g'}\right)^{0.5} - 1\right]R
             \]
             where \(T\) is the time period of the simple pendulum at the bottom of the mountain, \(T'\) is the time period of the same at the top of the mountain, and \(R\) is the radius of the earth.
           </li>
@@ -782,6 +782,262 @@
         The observation to be made here is that <em>the length of the second pendulum is directly proportional to the acceleration due to gravity</em>.
 
         <hr>
+
+      </div>
+
+      <div id="ch9">
+        <h2>Chapter 9 Waves</h2>
+
+        <em>def</em> <strong>Wave</strong> The periodic disturbance that carries energy by advancing through a material medium without permanently displacing the particles of the medium is called a <em>wave</em>. <br><br>
+
+        Material media propagate <em>mechanical</em> waves. <em>Electromagnetic</em> waves propagate through the <em>electromagnetic field</em> which propagates all of spacetime and is therefore essentially everywhere; which is why electromagnetic waves have no difficulty traveling throught he vacuum of outer space. <br>
+        A third type of waves is the <em>matter wave</em> which has to do with the fundamental particles of nature; it's discussion is beyond the scope of this chapter. <br><br>
+
+        <h4>Definitions regarding Waves</h4>
+
+        <em>def</em> <strong>Complete Oscillation</strong>. The returning of an oscillating particle to its intitial position and moving in the same direction as its original motion is called a <em>complete oscillation</em>. <br><br>
+
+        <em>def</em> <strong>Time Period</strong>. The time required for an oscillating particle to complete one complete oscillation is called the <em>time period</em> \(T\). <br><br>
+
+        <em>def</em> <strong>Frequency</strong>. The number of complete oscillations of an oscillating particle in 1 second is called the <em>frequency</em> \(f\). <br><br>
+
+        The <em>time period</em> and <em>frequency</em> are reciprocals
+        \[
+          fT = 1
+        \]
+        <br>
+
+        <em>def</em> <strong>Amplitude</strong>. The maximum displacement of an oscillating particle from the equilibrium is called the <em>amplitude</em> \(A\). <br><br>
+
+        <em>def</em> <strong>Phase</strong>. The state of the motion of an oscillating particle at a particular instant in time is called the phase. <br><br>
+
+        <em>def</em> <strong>Wavelength</strong>. The distance traveled by a wave during the completion of one complete oscillation is called the <em>wavelength</em> \(\lambda\). <br>
+        <em>Alt:</em> The distance between two consecutive peaks or troughs of a wave is called the <em>wavelength</em>. <br>
+        <em>Alt 2:</em> The distance between two consecutive particles in a wave oscillating at the same phase is called the <em>wavelength</em>. <br><br>
+
+        <em>def</em> <strong>Wave Velocity</strong>. The distance travelled by a wave in a particular direction in unit time is called the <em>wave velocity</em> \(v\). <br><br>
+
+        <em>def</em> <strong>Angular Frequency</strong>. The rate of change of the <em>phase</em> of a particle in a wave is called the <em>angular frequency</em> \(\omega\).
+        \[
+          \omega = \frac{2\pi}{T} = 2\pi f
+        \]
+        it has the units of \(\text{rad} \cdot \text{s}^{-1}\). <br><br>
+
+        The following relations hold true
+        \[
+          v = \frac{\lambda}T = \lambda f = \frac{\lambda \omega}{2\pi}
+        \]
+        <br>
+
+        <em>def</em> <strong>Simple Harmonic Waves</strong>. The waves created due to SHM are called <em>simple harmonic waves</em>. <br>
+        SHW are of two types:
+        <ul>
+          <li>
+            <strong>Transverse waves</strong> are waves where the particles oscillate perpendicular to the direction of propagation of the wave.
+          </li>
+          <li>
+            <strong>Longitudinal waves</strong> are waves where the particles oscillate parallel to the direction of propagation of the wave.
+          </li>
+        </ul>
+
+        <h4>Travelling or Progressive Waves</h4>
+
+        <strong>Travelling or Progressive waves</strong> are periodic disturbances propagating from one layer to another in a wide medium, continuously advancing in a particular direction. <br><br>
+
+        A traveling wave is described by
+        \[
+          y = A\sin(\omega t) = A\sin 2\pi f t
+        \]
+        
+        With a non-zero phase-shift \(\phi\),
+        \begin{align}
+          y &= A\sin(\omega t - \phi) \\
+            &= A\sin(\omega t - \frac{2\pi}\lambda x) \\
+            &= A\sin(\omega t - kx), \quad k \equiv \frac{2\pi}\lambda
+        \end{align}
+        
+        The \(k\) must not be confused with the spring constant. It's the <em>wavenumber</em> or <em>spatial frequency</em>, a spatial counterpart to the <em>temporal frequency</em> \(f = \frac{1}T\). It is sometimes also denoted with \(\frac{1}\lambda\) instead of \(\frac{2\pi}\lambda\). <br><br>
+
+        \begin{align}
+          y &= A\sin(\omega t - \phi) \\
+            &= A\sin\left( 2\pi f t - \frac{2\pi}\lambda x \right) \\
+            &= A\sin\left[\frac{2\pi}\lambda(vt - x)\right]
+        \end{align}
+        
+        which is a wave travelling to the positive \(x\)-direction, which is generally to the right. On the other hand, a wave travelling to the negative \(x\)-direction (left) is described by
+        \[
+          y = A\sin\left[\frac{2\pi}\lambda(vt + x)\right]
+        \]
+
+        a mere change in sign. <br><br>
+
+        <strong>The Principal of Superposition</strong>. The resultant displacement from the equilibrium of a particle caused by two waves being incident on it simulteneously is equal to the vector sum of the displacements produced by the two waves individually. <br><br>
+
+        The <em>phase difference</em> of two waves of the same amplitude and frequency, but different paths, is given by
+        \[
+          \delta = \frac{2\pi}\lambda(x_2 - x_1) = \frac{2\pi}\lambda \Delta x
+        \]
+
+        <h4>Standing or Stationary Waves</h4>
+
+        <strong>Standing or Stationary waves</strong> are resultant waves produced in a finite part of a medium due to the superposition of two waves of the same wavelength and amplitude travelling in opposite directions. <br><br>
+
+        \begin{align}
+          y &= y_1 + y_2 \\
+            &= a\sin \frac{2\pi}\lambda (vt - x) + a\sin \frac{2\pi}\lambda (vt + x) \\
+            &= 2a \, \sin\frac{2\pi}\lambda vt \, \cos\frac{2\pi}\lambda x
+        \end{align}
+
+        Here we have the amplitude
+        \[
+          A = 2a\cos\frac{2\pi}\lambda x = 2a\cos kx
+        \]
+        
+        then the wave is described by
+        \[
+          y = A\sin\frac{2\pi}\lambda vt, \quad A \equiv 2a\cos kx
+        \]
+
+        The <strong>nodes</strong> of a standing wave are formed at the minima of the of the wave, where the amplitude is at its minimum. <br><br>
+
+        The <strong>anti-nodes</strong> of a standing wave, on the other hand, are formed at the maxima of the wave, where the amplitude is at its maximum. <br><br>
+
+        The expression we found earlier for the amplitude of a standing wave
+        \[
+          A = 2a\cos\frac{2\pi}\lambda x
+        \]
+
+        Therefore the minimum is given by
+        \begin{align}
+          \cos\frac{2\pi}\lambda x &= 0 \\
+          \implies \frac{2\pi}\lambda x &= \frac{\pi}2,\, \frac{3\pi}2,\, \cdots,\, \frac{(2n+1)\pi}2 \\
+          \implies x &= (2n+1)\frac{\lambda}4, \quad n \in \mathbb{N}
+        \end{align}
+
+        And the maximum is given by
+        \begin{align}
+          \cos\frac{2\pi}\lambda x &= 1 \\
+          \implies \frac{2\pi}\lambda x &= 0,\, \pi,\, 2\pi,\, \cdots,\, n\pi \\
+          \implies x &= \frac{n}2 \lambda, \quad n \in \mathbb{N}
+        \end{align}
+
+        So we observe that the <em>nodes</em> are at
+        \[
+          x = (2n+1)\frac{\lambda}4
+        \]
+        
+        and the <em>anti-nodes</em> are at
+        \[
+          x = \frac{n}2\lambda
+        \]
+
+        <h4>A few more Definitions</h4>
+
+        <em>def</em> <strong>Free Vibration</strong>. The vibration of a body due to a natural frequency of its own is called <em>free vibration</em>. <br><br>
+
+        <em>def</em> <strong>Forced Vibration</strong>. When a body is made to oscillate by periodically applying a force to it at a frequency other than its natural frequency, it's termed as <em>forced vibration</em>. <br><br>
+
+        The phenomenon of a body vibrating with the maximum amplitude because of applying a frequency to it equal to its natural frequency is called <strong>resonance</strong>. <br><br>
+
+        <h4>Intensity</h4>
+
+        <em>def.</em> The amount of energy propagating per second per unit area perpendicular to the direction of propagation of a wave is called its <strong>intensity</strong>.
+        \[
+          I = \frac{P}A = \frac{P}{4\pi r^2}
+        \]
+
+        it has the units of \(\text{Js}^{-1}m^{-2}\) or \(\text{Wm}^{-2}\).
+
+        \begin{align}
+          I &= \frac{P}A \\~\\
+            &= \frac{E}{tA} \\~\\
+            &= \frac{EL}{LtA}, \quad L \equiv \text{length of a portion of the medium} \\~\\
+            &= \frac{EL}{Vt}, \quad V \equiv \text{volume of a portion of the medium} \\~\\
+            &= \frac{Ev}V, \quad v \equiv \text{wave velocity}
+        \end{align}
+
+        The mechanical energy of a system in periodic motion is given by
+        \[
+          E_{\text{mech}} = \frac{1}2 m v_{max}^2 = \frac{1}2 m (\omega A)^2, \quad A \equiv \text{amplitude of the wave}
+        \]
+
+        Then we have the intensity to be
+        \begin{align}
+          I &= E\frac{v}V \\
+            &= \frac{1}2 m (\omega A)^2 \frac{v}V \\
+            &= \frac{1}2 \frac{m}V v (2\pi f A)^2 \\
+            &= 2\rho v \pi^2 f^2 A^2
+        \end{align}
+
+        The following hold true for intensity of sound waves
+        <ul>
+          <li>
+            \(I \propto A^2\)
+          </li>
+          <li>
+            \(I \propto \frac{1}{r^2}\), where \(r\) is the distance between the source and the listener.
+          </li>
+          <li>
+            \(I \propto f^2\)
+          </li>
+          <li>
+            \(I \propto \rho\), where \(\rho\) is the density of the medium.
+          </li>
+          <li>The intensity of sound is increased by the presence of a resonating body in vicinity.</li>
+          <li>The intensity increases if the sound is propagating along the direction of motion of the medium; the intensity decreases if it's propagating against the direction of motion of the medium.</li>
+        </ul>
+
+        The <em>intensity level</em> of a sound wave is given by
+
+        \begin{align}
+          \beta &= L - L_0 \\
+                &= a\log\frac{I}{I_0}
+        \end{align}
+        where \(L\) is some arbitrary loudness, \(L_0\) is some standard loudness, \(I\) is some arbitrary intensity, and \(I_0\) is the standard intensiity; \(a\) is a proportionality constant. <br><br>
+        
+        The unit of <em>intensity level</em> is <strong>Bel (B)</strong>, but the usually used unit is a tenth of it - <strong>decibel</strong>, which is why the usual expression for the intensity level is
+        \[
+          \beta = 10\log\frac{I}{I_0}
+        \]
+
+        <em>def.</em> The <strong>bel</strong> is defined as - the intensity level of the sound whose intensity is 10 times greater than that of the standard intensity \(I_0\) is called 1 <strong>bel</strong>. <br><br>
+
+        <em>def.</em> The logarithm of the ratio of the intensity of a sound and the standard intensity is called the <strong>intensity level</strong>. <br><br>
+
+        The following relation exists between intensity and power
+        \[
+          \frac{I}{I_0} = \frac{P}{P_0} \implies \beta = 10\log\frac{P}{P_0}
+        \]
+        in which case, it's termed as the <em>power level</em>. <br><br>
+
+        The change in the intensity or power level is given by
+        \[
+          \Delta \beta = 10\log\frac{I_1}{I_2} = 10\log\frac{P_1}{P_2}
+        \]
+
+        <h5>A few more Definitions 2</h5>
+
+        <em>def</em> <strong>Threshold of Audibility</strong>. The minimum intensity for audibility is called the <em>threshold of audibility</em>. It's \(10^{-12} \text{ Wm}^{-2}\) for humans. <br><br>
+
+        <em>def</em> <strong>Threshold of Pain</strong>. The minimum intensity at which pain begins in the ear is called the <em>threshold of pain</em>. It's \(1 \text{ Wm}^{-2}\) for humans.
+
+
+        
+
+
+
+
+        
+
+        <!--
+        x. Nodes
+        x. Anti-nodes
+        x. Resonance
+        x. Intensity
+        5. Beat
+        6. Musical Sound stuff -->
+
+
 
       </div>
 
