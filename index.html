@@ -1021,22 +1021,56 @@
 
         <em>def</em> <strong>Threshold of Pain</strong>. The minimum intensity at which pain begins in the ear is called the <em>threshold of pain</em>. It's \(1 \text{ Wm}^{-2}\) for humans.
 
+        <h4>Beats</h4>
 
+        <em>def.</em> A <strong>beat</strong> is an interference pattern between two sound waves of the same amplitude but slightly different frequencies, perceived as periodic variation in volume whose rate is the difference of the two frequencies. <br><br>
         
-
-
-
-
+        \begin{align}
+          & y_1 = a\sin 2\pi f_1 t \\
+          & y_2 = a\sin 2\pi f_2 t \\
+          \therefore \, & Y = y_1 + y_2 = 2a\cos\left[2\pi\frac{f_1-f_2}2t\right]\sin\left[2\pi\frac{f_1+f_2}2t\right]
+        \end{align}
         
+        So we get that the resultant amplitude
+        \[
+          A = 2a\cos\left[2\pi\frac{f_1-f_2}2t\right]
+        \]
+        is that of the superposition of the two waves. <br><br>
+        
+        And the resultant frequency
+        \[
+          f = \frac{f_1 + f_2}2
+        \]
+        is the mean of the two frequencies. <br><br>
 
-        <!--
-        x. Nodes
-        x. Anti-nodes
-        x. Resonance
-        x. Intensity
-        5. Beat
-        6. Musical Sound stuff -->
+        A beat is produced when the amplitude is at its maximum, and a period of silence is occurs when the amplitude is at its minimum. <br><br>
 
+        Therefore a <strong>beat is produced</strong> when
+        \begin{align}
+          \cos\left[2\pi\frac{f_1-f_2}2t\right] &= \pm 1 \\
+          \implies 2\pi \frac{f_1-f_2}2t &= 0,\, \pi,\, 2\pi,\, \cdots,\, n\pi \\
+          \implies t &= 0,\, \frac{1}{f_1-f_2},\, \frac{2}{f_1-f_2},\, \cdots,\, \frac{n}{f_1-f_2}; \quad n \in \mathbb{N} \\
+        \end{align}
+
+        And the <strong>silences are produced</strong> when
+        \begin{align}
+          \cos\left[2\pi\frac{f_1-f_2}2t\right] &= \pm 0 \\
+          \implies 2\pi\frac{f_1-f_2}2t &= \frac{\pi}2,\, \frac{3\pi}2,\, \frac{5\pi}2,\, \cdots,\, (2n+1)\frac{\pi}2 \\
+          \implies t &= \frac{1}{2(f_1-f_2)},\, \frac{3}{2(f_1-f_2)},\, \frac{5}{2(f_1-f_2)},\, \cdots,\, \frac{2n+1}{2(f_1-f_2)}; \quad n \in \mathbb{N}
+        \end{align}
+
+        We now observe that the duration between two consecutive beats as well as two consecutive silences is precisely
+        \[
+          \frac{1}{f_1-f_2} \, \text{s}
+        \]
+
+        Therefore if we have 1 beat every \(\frac{1}{f_1-f_2}\) seconds, the number of beats per second is given by
+        \[
+          N = f_1-f_2
+        \]
+        This is what the <em>whose rate is the difference of the two frequencies</em> meant in our definition for the <em>beat</em>.
+
+        <h4>Musical Sound Stuff</h4>
 
 
       </div>
