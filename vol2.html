@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HS Physics Notes</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- latex.css -->
+    <link rel="stylesheet" href="https://latex.now.sh/style.css">
+    <!-- mathjax -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  </head>
+
+  <body>
+      
+    <div class="navbar">
+      <img src="./home.png" alt="Home">
+      <a href="https://github.com/leadersheir/hs-physics-notes"><img src="./github_icon.png" alt="github"></a>
+    </div>
+
+    <div id="main">
+      <h1 class="title">High School Physics Notes</h1>
+
+      <div id="toc">
+        <h3>TOC</h3>
+        <a href="#ch11"><h5>Chapter 1</h5></a>
+        <a href="#ch12"><h5>Chapter 2</h5></a>
+        <a href="#ch13"><h5>Chapter 3</h5></a>
+        <a href="#ch14"><h5>Chapter 4</h5></a>
+        <a href="#ch15"><h5>Chapter 5</h5></a>
+        <a href="#ch16"><h5>Chapter 6</h5></a>
+        <a href="#ch17"><h5>Chapter 7</h5></a>
+        <a href="#ch18"><h5>Chapter 8</h5></a>
+        <a href="#ch19"><h5>Chapter 9</h5></a>
+        <a href="#ch20"><h5>Chapter 10</h5></a>
+        <a href="./index.html"><h5>Vol II</h5></a>
+      </div>
+
+      <div class="ch11">
+        <h2>Chapter 11 Introductory Thermodynamics</h2>
+
+        <h4>Definition</h4>
+
+        <em>def</em> <strong>Equilibrium</strong>. When the different components of a system are at the same temperature and no exchange of heat occurs, the system is said to be in <strong>equilibrium</strong>. <br><br>
+
+        <h5>Temperature</h5>
+
+        The temperature of a system is determined by a number of properties. The properties of a system that change uniformly with the temperature of the system are called <strong>thermodynamic properties</strong>. The substances whose physical properties are thermometric are called <strong>thermometric materials</strong>. <br><br>
+
+        A <em>temperature scale is defined as follows</em>
+
+        \[
+          \frac{\theta - \theta_{ice}}{\theta_{steam} - \theta_{ice}} = \frac{X_{\theta} - X_{ice}}{X_{steam} - X_{ice}}
+        \]
+        
+        where \(\theta\) is some arbitrary temperature, \(\theta_{ice}\) is the temperature at which water turns into ice, \(\theta_{steam}\) is the temperature at which water turns into steam, and \(X\) is some thermometric property. The temperature scale where \((\theta_{steam}-\theta_{ice})\) is \(100\), is called the <strong>Celsius scale</strong>. <br><br>
+
+        <em>def</em> <strong>Triple Point of Water</strong>. At \(4.58\) mm mercury pressure, the temperature at which pure ice, liquid water, and water vapor co-exist in <em>thermal equilibrium</em> is called the <strong>triple point</strong> of water. <br><br>
+
+        <em>def</em> <strong>Kelvin Scale</strong>. The S. I. unit of temperature or change of temeprature is called the <em>Kelvin</em>. 1 K or Kelvin is defined as \(\frac{1}{273.16}\) of the temperature at which the <em>triple point</em> of water is reached. <br><br>
+
+        <h4>Thermodynamic Laws</h4>
+
+        Transformation of energy follows certain laws called the <strong>thermodynamic laws</strong>.
+
+        <strong>Zeroth Law</strong>. If <em>C</em> is in thermal equilibrium with both <em>A</em> and <em>B</em>, then <em>A</em> and <em>B</em> are also in thermal equilibrium.
+        
+        <h5>First Law</h5>
+
+        The particular part of the material world that we consider to perform an experiment is called a <strong>system</strong>. Primarily there are three kinds of systems
+        <ul>
+          <li>
+            <strong>Open System</strong>. A system which can exchance mass and heat with its environment is an <em>open system</em>.
+          </li>
+          <li>
+            <strong>Closed System</strong>. A system which can only exchange energy (and not mass) with its environment is a <em>closed system</em>.
+          </li>
+          <li>
+            <strong>Isolated System</strong>. A system which cannot exchange either mass or energy with its environment is called an <em>isolated system</em>.
+          </li>
+        </ul>
+        
+        Pressure <em>P</em>, volume <em>V</em>, and temperature at <em>T</em> are called the <strong>thermodynamic coordinates</strong>. Any change in the thermodynamic coordinates is called a  <strong>thermodynamic process</strong>. <br><br>
+
+        <em>def</em> <strong>Internal Energy</strong>. The energy inherent in a system due to the motion of its elementary particles is called the <strong>internal energy</strong>. The internal energy can be converted into work and/or other forms of energy. <br><br>
+
+        <strong>Joule's Law</strong>. If mechanical energy is converted into heat or vice versa, then the heat and mechanical energy (work) are proportional to each other
+        \begin{align}
+          W &\propto H \\
+          \implies W &= JH \\
+        \end{align}
+
+        where \(J\) is the <em>Joule</em> constant. <br>
+        This is also called the <em>first law of thermodynamics</em>. <br><br>
+
+        <strong>Heat</strong> is something that causes change in the internal energy of a system. <em>Adding</em> heat <em>increases</em> the internal energy and <em>removing</em> heat <em>reduces</em> it.
+        \begin{align}
+          \Delta Q &= \Delta U + \Delta W \\
+          \implies dQ &= dU + dW \\
+          \implies dU &= dQ - dW
+        \end{align}
+
+        That is, the internal energy of a system is the amount of energy input to the system take away the amount of work done by it. <br><br>
+
+        <h5>Types of Thermodynamics Processes (on the basis of constant thermodynamic coordinates)</h5>
+
+        An <strong>isothermal process</strong> is when the temperature of a system remains constant throughout the process while pressure <em>p</em> and temperature <em>T</em> change in accordance to <em>Boyle's law</em>. <br><br>
+
+        An <strong>isobaric process</strong> is when the pressure of a system remains constant throughout the process while the temperature <em>T</em> and volume <em>V</em> change in accordance to <em>Charle's law</em>. <br><br>
+
+        An <strong>adiabatic process</strong> is when the energy of a system remains constant throughout the process while the thermodynamic coordinates change. <br><br>
+        
+        An <em>isobaric</em> process is represented by a horizontal <em>straight line</em> on a <em>pV</em>-diagram. The volume and the temperature change while the pressure remains constant. An <em>isothermal</em> process is represented by a curve on a <em>pV</em>-diagram, and so is an <em>adiabatic</em> process; however an adiabatic curve is steeper than an isothermal curve. <br><br>
+
+        <h5>Second Law</h5>
+
+        There are several definitions of the second law. <br><br>
+
+        <strong>Engine Statement</strong>. It is impossible for any system to undergo a process in which it absorbs heat from a reservoir at a single temperature and converts the heat completely into mechanical work, with the system ending in the same state in which it began. <br><br>
+
+        <strong>Refrigarator Statement</strong>. It is impossible for any process to have as its sole result the transfer of heat from a cooler to a hotter object. <br><br>
+
+        <h6>Second Law Statements in Tapan's Text</h6>
+
+        <strong>Carnot's Statement</strong>. No engine can be built which can extract a fixed amount of heat and convert entirely into work. <br><br>
+
+        <strong>Clasius' Statement</strong>. It is impossible for a self acting machine, unaided by any external agency, to convey heat from a body at a lower temperature to a body at a higher temperature. <br><br>
+
+        <strong>Planck's Statement</strong>. It is impossible to construct an engine which can extract heat continuously from of heat reservoir and completely convert into work. <br><br>
+
+        <strong>Kelvin's Statement</strong>. Continuous flow of energy cannot be obtained from an object cooling it than the coolest part of its surroundings. <br><br><br>
+
+        <em>def</em> <strong>Reversible Process</strong>. A process which can be retraced in the reverse direction so that the system and its surroundings pass through the exact same state at each intermediate stage as in the original process is called a <strong>reversible process</strong>. <br><br>
+
+        <em>def</em> <strong>Irreversible Process</strong>. A process which does not exactly reverse, and the system and its surroundings do not pass through the exact same intermediate stages as the original process is called an <strong>irreversible process</strong>. <br><br>
+
+        <h4>Heat Engines</h4>
+
+        A device that converts heat energy into mechanical energy i.e. work is called a <strong>heat engine</strong>. <br><br>
+
+        A <em>heat engine</em> absorbs heat from a heat reservoir at a higher temperature, converts a part of the heat into mechanical work, and rejects the remainder into a heat sink at a lower temperature. Generally, a heat engine can convert a maximum of 25% of the heat from the heat reservoir into mechanical work. <br><br>
+
+        <h5>Carnot Engine</h5>
+
+        An ideal engine free from all imperfections that can convert 100% of the absorbed heat energy into mechanical work is called a <strong>Carnot engine</strong>. <br><br>
+
+        In the <strong>carnot cycle</strong>, a working substance starting out in a certain thermodynamic condition, undergoes two successive expansions - an isothermal and an adiabatic; then two successive compressions - an isothermal and an adiabatic, and is thus returned back to its initial state. <br><br>
+
+        <h4>Efficiency in a Heat Engine</h4>
+
+        The efficiency of a heat engine that absorbs \(Q_1\) amount of heat from a reservoir at \(T_1\) and rejects \(Q_2\) amount of heat to a heat sink at \(T_2\) is given by
+        \begin{align}
+          \eta &= \frac{W}Q \\
+               &= \frac{Q_1-Q_2}{Q_1}, \quad W \equiv Q_1 - Q_2 \\
+               &= 1 - \frac{Q_2}{Q_1} \\
+               &= 1 - \frac{T_2}{T_1} \\
+               &= \frac{T_1 - T_2}{T_1}
+        \end{align}
+
+        A measure of efficiency would usually be expressed as a percentage
+        \[
+          \eta = \frac{T_1 - T_2}{T_1} \times 100%
+        \]
+
+        
+
+      </div>
+
+
+
+
+    </div>
+
+  </body>
+
+
+</html>
